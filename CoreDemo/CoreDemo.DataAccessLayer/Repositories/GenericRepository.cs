@@ -1,5 +1,6 @@
 ﻿using CoreDemo.DataAccessLayer.Abstract;
 using CoreDemo.DataAccessLayer.DataContext;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,36 +12,38 @@ namespace CoreDemo.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private   readonly ApplicationDbContext _context;
-      
+        protected ApplicationDbContext _context;
+        internal DbSet<T> dbSet;
+
         public GenericRepository(ApplicationDbContext context)
         {
             _context = context;
+            this.dbSet = _context.Set<T>();
         }
 
         public void Add(T entity)
         {
-            _context.Add(entity);
+            dbSet.Add(entity);
         }
 
         public void Delete(T entity)
         {
-            _context.Remove(entity);
+            dbSet.Remove(entity);
         }
 
         public List<T> GetAll()
         {
-            return _context.Set<T>().ToList();
+            return dbSet.ToList();
         }
 
         public T GetById(int id)
         {
-            return _context.Set<T>().Find(id);
+            return dbSet.Find(id);
         }
 
         public void Update(T entity)
         {
-            _context.Update(entity);
+            dbSet.Update(entity);
         }
     }
 }

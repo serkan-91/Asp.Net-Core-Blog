@@ -1,4 +1,5 @@
 ﻿using CoreDemo.Shared.Models;
+using CoreDemo.DataAccessLayer.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +8,8 @@ using System.Threading.Tasks;
 
 namespace CoreDemo.DataAccessLayer.Abstract
 {
-    public interface ICategoryDal
+    public interface ICategoryDal : IGenericRepository<Category>
     {
-        List<Category> GetCategories();
-        void AddCategory(Category category);
-        void RemoveCategory(Category category);
-        void UpdateCategory(Category category);
-        Category GetCategoryById(int id);
+      
     }
 }

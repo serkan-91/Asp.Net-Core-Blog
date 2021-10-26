@@ -1,0 +1,17 @@
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.BusinessLayer.deps.json
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.BusinessLayer.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\ref\CoreDemo.BusinessLayer.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.BusinessLayer.pdb
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.DataAccessLayer.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.Shared.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.DataAccessLayer.pdb
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\bin\Debug\net5.0\CoreDemo.Shared.pdb
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.AssemblyInfo.cs
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.csproj.CopyComplete
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\ref\CoreDemo.BusinessLayer.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.BusinessLayer\obj\Debug\net5.0\CoreDemo.BusinessLayer.pdb

@@ -1,0 +1,12 @@
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\bin\Debug\net5.0\CoreDemo.Shared.deps.json
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\bin\Debug\net5.0\CoreDemo.Shared.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\bin\Debug\net5.0\ref\CoreDemo.Shared.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\bin\Debug\net5.0\CoreDemo.Shared.pdb
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.csproj.AssemblyReference.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.AssemblyInfoInputs.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.AssemblyInfo.cs
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\ref\CoreDemo.Shared.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo.Shared\obj\Debug\net5.0\CoreDemo.Shared.pdb

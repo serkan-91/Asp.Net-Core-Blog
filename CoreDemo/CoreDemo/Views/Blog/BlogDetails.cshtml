@@ -49,11 +49,10 @@
 						<a href="single.html" class="btn btn-primary read-m">Devamini Oku</a>
 					</div>
 				   }
-					@*@await Html.PartialAsync("~/Views/Comment/_CommentListByBlog.cshtml")*@
-					@*@await Component.InvokeAsync("CommentList")*@
-					@await Html.PartialAsync("~/Views/Comment/_PartialAddComment.cshtml")
+			 
+					
 					<div id="CommentListContainer"></div>
-				
+				@await Html.PartialAsync("~/Views/Comment/_PartialAddComment.cshtml")
 				
 				</div>
 

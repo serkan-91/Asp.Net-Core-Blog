@@ -13,5 +13,6 @@ namespace CoreDemo.DataAccessLayer.Abstract
         void Delete(T entity);
         List<T> GetAll();
         T GetById(int id);
+
     }
 }

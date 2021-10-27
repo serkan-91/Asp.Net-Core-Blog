@@ -9,5 +9,6 @@ namespace CoreDemo.DataAccessLayer.Abstract
 {
     public interface IBlogDal : IGenericRepository<Blog>
     {
+        List<Blog> GetBlogListWithCategory();
     }
 }

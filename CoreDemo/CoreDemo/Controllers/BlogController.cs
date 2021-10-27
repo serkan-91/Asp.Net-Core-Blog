@@ -14,7 +14,7 @@ namespace CoreDemo.Controllers
 
         public IActionResult Index()
         {
-            var values = _unitOfWork.Blogs.GetAll();
+            var values = _unitOfWork.Blogs.GetBlogListWithCategory();
             return View(values);
         }
     }

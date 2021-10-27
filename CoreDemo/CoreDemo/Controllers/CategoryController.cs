@@ -1,5 +1,4 @@
-﻿using CoreDemo.BusinessLayer.Concrete;
-using CoreDemo.DataAccessLayer.EntityFramework;
+﻿using CoreDemo.DataAccessLayer.EntityFramework;
 using CoreDemo.DataAccessLayer.UOW;
 using Microsoft.AspNetCore.Mvc;
 

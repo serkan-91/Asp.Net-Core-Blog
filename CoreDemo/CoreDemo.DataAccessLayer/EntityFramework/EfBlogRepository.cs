@@ -14,10 +14,13 @@ namespace CoreDemo.DataAccessLayer.EntityFramework
 {
     public class EfBlogRepository : GenericRepository<Blog>, IBlogDal
     {
-        
+    
         public EfBlogRepository(ApplicationDbContext context ) : base(context)
         {
+            
         }
+
+        
 
         public List<Blog> GetBlogListWithCategory()
         {

@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +40,11 @@ namespace CoreDemo.DataAccessLayer.Repositories
         public T GetById(int id)
         {
             return dbSet.Find(id);
+        }
+
+        public List<T> GetAll(Expression<Func<T, bool>> filter)
+        {
+            return dbSet.Where(filter).ToList();
         }
 
         public void Update(T entity)

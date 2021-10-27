@@ -17,5 +17,11 @@ namespace CoreDemo.Controllers
             var values = _unitOfWork.Blogs.GetBlogListWithCategory();
             return View(values);
         }
+
+        public IActionResult BlogDetails(int id)
+        {
+            var values = _unitOfWork.Blogs.GetAll(x=>x.BlogId == id);
+            return View(values);
+        }
     }
 }

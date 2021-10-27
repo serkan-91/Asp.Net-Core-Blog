@@ -1,9 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using CoreDemo.DataAccessLayer.UOW;
 
 namespace CoreDemo.Controllers
 {
     public class CommentController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public CommentController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -12,9 +20,10 @@ namespace CoreDemo.Controllers
         {
             return PartialView();
         }
-        public PartialViewResult _CommentListByBlog()
+        public PartialViewResult _CommentListByBlog(int id)
         {
-            return PartialView();
+            var values = _unitOfWork.Comments.GetAll(x => x.BlogId == id);
+            return PartialView(values);
         }
     }
 }

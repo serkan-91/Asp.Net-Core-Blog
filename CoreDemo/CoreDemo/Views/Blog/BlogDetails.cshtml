@@ -6,24 +6,7 @@
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
 
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
-
-<!DOCTYPE html>
-<html lang="zxx">
-	 
  
-<body>
- 
-	<!--//header-->
-	 
- 
-
-	<!--//banner-->
 	<section class="banner-bottom">
 		<!--/blog-->
 		<div class="container">
@@ -32,7 +15,7 @@
 				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
 					@foreach (var item in Model)
 				   {
-					   
+					   <input type="hidden" id="BlogId" value="@item.BlogId"></input>
 					<div class="blog-grid-top">
 						<div class="b-grid-top">
 							<div class="blog_info_left_grid">
@@ -66,9 +49,10 @@
 						<a href="single.html" class="btn btn-primary read-m">Devamini Oku</a>
 					</div>
 				   }
-					@await Html.PartialAsync("~/Views/Comment/_CommentListByBlog.cshtml")
+					@*@await Html.PartialAsync("~/Views/Comment/_CommentListByBlog.cshtml")*@
+					@*@await Component.InvokeAsync("CommentList")*@
 					@await Html.PartialAsync("~/Views/Comment/_PartialAddComment.cshtml")
-
+					<div id="CommentListContainer"></div>
 				
 				
 				</div>
@@ -192,11 +176,18 @@
 			</div>
 		</div>
 	</section>
-	<!--//main-->
-
  
 
-
-</body>
-
-</html>
+ 
+	 <script>
+		 $( document ).ready(function() {
+			 var id = $("#BlogId").val(); 
+		 $.ajax({
+		url:"/Comment/_CommentListByBlog/"+id,
+		type:"Get",
+		success:function(data){
+			$("#CommentListContainer").html(data);
+		}
+	})
+		});
+	 </script>

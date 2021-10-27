@@ -42,7 +42,7 @@ namespace CoreDemo.DataAccessLayer.UOW
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context.Dispose();
         }
     }
 }

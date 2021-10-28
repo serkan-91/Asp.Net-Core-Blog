@@ -19,7 +19,7 @@ namespace CoreDemo.DataAccessLayer.EntityFramework
             
         }
 
-        
+       
 
         public List<Blog> GetBlogListWithCategory()
         {

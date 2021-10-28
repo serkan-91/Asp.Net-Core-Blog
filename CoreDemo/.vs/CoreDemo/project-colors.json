@@ -5,7 +5,22 @@
       "ProjectGuid": "415c4979-6f4f-40dc-ba7a-8c037272fe74",
       "DisplayName": "CoreDemo",
       "ColorIndex": 0
+    },
+    "7444218b-dac1-4b0c-94a2-6b2f10a12295": {
+      "ProjectGuid": "7444218b-dac1-4b0c-94a2-6b2f10a12295",
+      "DisplayName": "CoreDemo.DataAccessLayer",
+      "ColorIndex": 1
+    },
+    "ff4550a2-279e-4284-8dfe-d458ebe24450": {
+      "ProjectGuid": "ff4550a2-279e-4284-8dfe-d458ebe24450",
+      "DisplayName": "CoreDemo.BusinessLayer",
+      "ColorIndex": 2
+    },
+    "bff78636-f486-4964-8046-65248bb7cde6": {
+      "ProjectGuid": "bff78636-f486-4964-8046-65248bb7cde6",
+      "DisplayName": "CoreDemo.Shared",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

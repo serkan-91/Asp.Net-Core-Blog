@@ -25,16 +25,20 @@ namespace CoreDemo.DataAccessLayer.Repositories
         public void Add(T entity)
         {
             dbSet.Add(entity);
+            _context.SaveChanges();
         }
 
         public void Delete(T entity)
         {
             dbSet.Remove(entity);
+            _context.SaveChanges();
+
         }
 
         public List<T> GetAll()
         {
             return dbSet.ToList();
+
         }
 
         public T GetById(int id)
@@ -50,6 +54,8 @@ namespace CoreDemo.DataAccessLayer.Repositories
         public void Update(T entity)
         {
             dbSet.Update(entity);
+            _context.SaveChanges();
+
         }
     }
 }

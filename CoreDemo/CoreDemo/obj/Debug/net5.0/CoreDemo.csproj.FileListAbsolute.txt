@@ -445,3 +445,8 @@ C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj
 C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Blog\BlogDetails.cshtml.g.cs
 C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Comment\_PartialAddComment.cshtml.g.cs
 C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Comment\_CommentListByBlog.cshtml.g.cs
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\Components\CategoryList\Default.cshtml.g.cs
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\obj\Debug\net5.0\Razor\Views\Register\Index.cshtml.g.cs
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\serka\OneDrive\Documents\GitHub\Asp.Net-Core-Blog\CoreDemo\CoreDemo\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

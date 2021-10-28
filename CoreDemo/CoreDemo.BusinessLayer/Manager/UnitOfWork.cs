@@ -1,4 +1,5 @@
-﻿using CoreDemo.DataAccessLayer.Abstract;
+﻿using CoreDemo.BusinessLayer.Service;
+using CoreDemo.DataAccessLayer.Abstract;
 using CoreDemo.DataAccessLayer.DataContext;
 using CoreDemo.DataAccessLayer.EntityFramework;
 using System;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoreDemo.DataAccessLayer.UOW
+namespace CoreDemo.BusinessLayer.Manager
 {
     public class UnitOfWork : IUnitOfWork, IDisposable
     {

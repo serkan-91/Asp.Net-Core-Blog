@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CoreDemo.DataAccessLayer.UOW;
+using CoreDemo.BusinessLayer.Service;
 
 namespace CoreDemo.Controllers
 {

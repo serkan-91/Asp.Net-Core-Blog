@@ -1,7 +1,6 @@
 ﻿using CoreDemo.DataAccessLayer.Abstract;
 using CoreDemo.DataAccessLayer.DataContext;
 using CoreDemo.DataAccessLayer.Repositories;
-using CoreDemo.DataAccessLayer.UOW;
 using CoreDemo.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using System;

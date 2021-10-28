@@ -1,5 +1,5 @@
 ﻿using CoreDemo.BusinessLayer.ValidationRules;
-using CoreDemo.DataAccessLayer.UOW;
+using CoreDemo.BusinessLayer.Service;
 using CoreDemo.Shared.Models;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;

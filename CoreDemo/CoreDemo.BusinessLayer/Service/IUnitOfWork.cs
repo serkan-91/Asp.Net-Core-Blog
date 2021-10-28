@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoreDemo.DataAccessLayer.UOW
+namespace CoreDemo.BusinessLayer.Service
 {
     public interface IUnitOfWork
     {

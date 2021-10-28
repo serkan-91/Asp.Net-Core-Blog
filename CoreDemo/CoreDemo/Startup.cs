@@ -1,5 +1,6 @@
 using CoreDemo.DataAccessLayer.DataContext;
-using CoreDemo.DataAccessLayer.UOW;
+using CoreDemo.BusinessLayer.Service;
+using CoreDemo.BusinessLayer.Manager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;

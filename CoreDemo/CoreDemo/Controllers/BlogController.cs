@@ -1,4 +1,4 @@
-﻿using CoreDemo.DataAccessLayer.UOW;
+﻿using CoreDemo.BusinessLayer.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.Controllers

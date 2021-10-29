@@ -5,6 +5,7 @@
     ViewData["Title"] = "BlogDetails";
     Layout = "~/Views/Shared/UserLayout.cshtml";
 }
+ <h2>a @(ViewData["BlogId"])</h2> 
 
 
     <section class="banner-bottom">
@@ -15,7 +16,7 @@
                 <div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
                 @foreach (var item in Model)
                 {
-                           <input type="hidden" id="BlogId" value="@item.BlogId"></input>
+                           <input type="hidden" id="BlogId" value="@item.BlogId">
                         <div class="blog-grid-top">
                             <div class="b-grid-top">
                                 <div class="blog_info_left_grid">
@@ -63,15 +64,7 @@
                         <div class="tech-btm">
                             <img src="~/web/images/banner1.jpg" class="img-fluid" alt="">
                         </div>
-                        <div class="tech-btm">
-                            <h4>Sign up to our newsletter</h4>
-                            <p>Pellentesque dui, non felis. Maecenas male </p>
-                            <form action="#" method="post">
-                                <input type="email" placeholder="Email" required="">
-                                <input type="submit" value="Subscribe">
-                            </form>
-
-                        </div>
+               @await Html.PartialAsync("~/Views/NewsLetter/_SubscribeMail.cshtml")
                 @await Component.InvokeAsync("CategoryList")
                      
                 @await Component.InvokeAsync("WriterLastBlog")

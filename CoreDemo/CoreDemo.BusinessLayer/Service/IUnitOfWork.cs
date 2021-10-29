@@ -15,6 +15,7 @@ namespace CoreDemo.BusinessLayer.Service
         ICommentDal Comments { get; }
         IContactDal Contacts { get; }
         IWriterDal Writers { get; }
+        INewsLetterDal NewsLetters { get; }
         Task CompleteAsync();
 
     }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CoreDemo.BusinessLayer.Service;
+using CoreDemo.Shared.Models;
+using System;
 
 namespace CoreDemo.Controllers
 {
@@ -16,8 +18,19 @@ namespace CoreDemo.Controllers
         {
             return View();
         }
+
+        [HttpGet]
         public PartialViewResult _PartialAddComment()
         {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public PartialViewResult _PartialAddComment(Comment p)
+        {
+            p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
+            p.CommentStatus = true;
+            _unitOfWork.Comments.Add(p);
             return PartialView();
         }
         public PartialViewResult _CommentListByBlog(int id)

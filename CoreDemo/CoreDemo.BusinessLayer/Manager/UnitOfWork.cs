@@ -19,6 +19,7 @@ namespace CoreDemo.BusinessLayer.Manager
         public ICommentDal Comments { get; private set; }
         public IContactDal Contacts { get; private set; }
         public IWriterDal Writers { get; private set; }
+        public INewsLetterDal NewsLetters { get; private set; }
 
    
 
@@ -31,6 +32,7 @@ namespace CoreDemo.BusinessLayer.Manager
             Comments = new EfCommentRepository(_context);
             Contacts = new EfContactRepository(_context);
             Writers = new EfWriterRepository(_context);
+            NewsLetters = new EfNewsletterRepository(_context);
         }
 
 

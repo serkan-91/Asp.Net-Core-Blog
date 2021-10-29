@@ -1,0 +1,25 @@
+﻿<div class="tech-btm">
+    <h4>Mail bultenine abone olun</h4>
+    <p>Teknoloji,yazilim ve diger bloglar... </p>
+    <form id="SubscribeForm" action="/NewsLetter/_SubscribeMail" method="post">
+        <input type="email" placeholder="Email" required="" id="mail" name="Mail">
+        <input id="SubscribeMail" type="submit" value="Subscribe">
+    </form>
+
+</div>
+<script>
+       $(document).on("submit", "#SubscribeForm", function(event)        {  
+                   event.preventDefault();
+           var form = $("#SubscribeForm");
+           var formMail = $("#mail").val();
+               $.ajax({
+               type: "POST",
+               url: "/NewsLetter/_SubscribeMail",
+               data: form.serialize(),
+               success: function (data){
+                   swal("tebrikler mail bultenine uye oldunuz");
+                   $("#mail").val("")
+               }
+             })
+         })
+</script>

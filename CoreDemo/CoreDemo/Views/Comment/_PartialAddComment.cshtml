@@ -1,14 +1,41 @@
-﻿	<div class="comment-top">
-						<h4>Yorum yapin</h4>
-						<div class="comment-bottom">
-							<form action="#" method="post">
-								<input class="form-control" type="text" name="Name" placeholder="Name" required="">
-								<input class="form-control" type="email" name="Email" placeholder="Email" required="">
+﻿<div class="comment-top">
+    <h4>Yorum yapin</h4>
+    <div class="comment-bottom">
+        <form id="AddCommentForm" action="/Comment/_PartialAddComment" method="post">
 
-								<input class="form-control" type="text" name="Subject" placeholder="Subject" required="">
+            <input class="form-control" type="text" id="CuserName" name="CommentUserName"
+            placeholder="Adiniz Soyadiniz" required="">
 
-								<textarea class="form-control" name="Message" placeholder="Message..." required=""></textarea>
-								<button type="submit" class="btn btn-primary submit">Submit</button>
-							</form>
-						</div>
-					</div>
+            <input class="form-control" type="text" 
+            name="CommentTitle" placeholder="Konu" id="CcommentTitle" required="">
+ 
+            <input type="hidden" name="BlogId" value="@ViewData["BlogId"]" />
+            <textarea class="form-control" name="CommentContent" 
+
+            placeholder="Yorumunuz..." id="CcommentContent" required=""></textarea>
+            <button type="submit" class="btn btn-primary submit">Yorum Yap</button>
+        </form>
+    </div>
+</div>
+
+<script>
+       $(document).on("submit", "#AddCommentForm", function(event)        {  
+                   event.preventDefault();
+            var  currLoc = $(location).attr('href');
+           var form = $("#AddCommentForm"); 
+               $.ajax({
+               type: "POST",
+               url: "/Comment/_PartialAddComment",
+               data: form.serialize(),
+               success: function (data){
+                   swal("Mesajiniz yayinlanmistir");
+                   
+                   setTimeout(
+  function() 
+  {
+    location.href=currLoc
+  }, 5000);
+               }
+             })
+         })
+</script>

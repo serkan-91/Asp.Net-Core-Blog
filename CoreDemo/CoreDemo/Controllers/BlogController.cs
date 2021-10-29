@@ -21,6 +21,8 @@ namespace CoreDemo.Controllers
         public IActionResult BlogDetails(int id)
         {
             var values = _unitOfWork.Blogs.GetAll(x=>x.BlogId == id);
+            ViewData["BlogId"] = id;
+
             return View(values);
         }
     }

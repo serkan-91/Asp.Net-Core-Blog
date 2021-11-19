@@ -19,11 +19,25 @@ namespace CoreDemo.DataAccessLayer.EntityFramework
             
         }
 
-       
+        public List<Blog> GetBlogListByWriter(int id)
+        {
+            return dbSet.Where(x=> x.WriterId == id).ToList();
+        }
 
         public List<Blog> GetBlogListWithCategory()
         {
             return dbSet.Include(x => x.Category).ToList();
+        }
+
+        public List<Blog> GetBlogListWithCategoryByWriter(int id)
+        {
+            return dbSet.Include(x => x.Category).Where(x => x.WriterId == id).ToList();
+
+        }
+
+        public List<Blog> GetLast3Blog()
+        {
+            return dbSet.Take(3).ToList();
         }
     }
 }

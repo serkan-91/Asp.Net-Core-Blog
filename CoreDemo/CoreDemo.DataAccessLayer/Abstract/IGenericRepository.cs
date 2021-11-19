@@ -15,5 +15,6 @@ namespace CoreDemo.DataAccessLayer.Abstract
         List<T> GetAll();
         T GetById(int id);
         List<T> GetAll(Expression<Func<T, bool>> filter);
+        T GetByFilter(Expression<Func<T, bool>> filter);
     }
 }

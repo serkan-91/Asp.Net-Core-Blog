@@ -10,7 +10,9 @@ namespace CoreDemo.DataAccessLayer.Abstract
     public interface IBlogDal : IGenericRepository<Blog>
     {
         List<Blog> GetBlogListWithCategory();
-        
+        List<Blog> GetBlogListWithCategoryByWriter(int id);
+        List<Blog> GetLast3Blog();
+        List<Blog> GetBlogListByWriter(int id);
      
         
     }

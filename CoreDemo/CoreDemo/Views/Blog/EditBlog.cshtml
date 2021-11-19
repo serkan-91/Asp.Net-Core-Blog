@@ -1,0 +1,47 @@
+﻿@using CoreDemo.Shared.Models
+@model Blog
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Blog Duzenle</h1>
+
+@using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
+{
+    @Html.Label("Blog Id")
+    @Html.TextBoxFor(x=>x.BlogId, new {@class = "form-control"}); 
+    <br/>
+    @Html.Label("Blog Basligi")
+    @Html.TextBoxFor(x=>x.BlogTitle, new {@class = "form-control"});
+    <br/>
+    @Html.Label("Blog Thumbnail Url")
+    @Html.TextBoxFor(x=>x.BlogThumbnailImage, new {@class = "form-control"});
+    
+    <br/>
+    @Html.Label("Blog Gorseli")
+    @Html.TextBoxFor(x=>x.BlogImage, new {@class = "form-control"});
+    <br/>
+    @Html.Label("Blog Kategori")
+     @Html.DropDownListFor(x=> x.CategoryId,(List<SelectListItem>)ViewBag.cv, new { @class = "form-control"})
+    <br/>
+    @Html.Label("Blog Icerigi")
+    @Html.TextAreaFor(x=>x.BlogContent,10,3, new {@class = "form-control"});
+    <br/>
+    @Html.Label("Blog Durumu")
+    @Html.DropDownListFor(x=>x.BlogStatus,  new List<SelectListItem> {
+                     new SelectListItem {
+                        Text="Aktif",
+                        Value="true" ,
+                        // Selected = true, seçili olarak gelsin
+                        // Disabled = true  disable olarak gelsin istersek kullanıyoruz
+                     },
+                     new SelectListItem {
+                        Text="Pasif",
+                        Value="false",
+                     },
+
+                 },  new {@class = "form-control"});
+    <br/>
+  <button class="btn btn-success">Guncelle</button>
+}

@@ -1,0 +1,71 @@
+﻿@using CoreDemo.Shared.Models
+@model List<Blog>
+
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Yazarin Bloglari</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Blog Basligi</th>
+        <th>Olusturma Tarihi</th>
+        <th>Kategori</th>
+        <th>Durum</th>
+        <th>Sil</th>
+        <th>Duzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.BlogId</th>
+            <td>@item.BlogTitle</td>
+            <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
+            <td>@item.Category.CategoryName</td>
+            @if (item.BlogStatus == true)
+            {
+                <td><span class="text-success">Aktif </span> </td>
+            }
+            else
+            {
+                <td><span class="text-danger"> Pasif </span> </td>
+
+
+            }
+            <td><span data-id="@item.BlogId" class="btn btn-danger test ">Sil</span></td>
+            <td><a href="/Blog/EditBlog/@item.BlogId"   class="btn alert-warning">Duzenle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Blog/BlogAdd" class="btn btn-info">Yeni Blog Olustur</a>
+
+
+<script>
+     $(document).on("click",".test",function() {
+         var testid = $(this).attr("data-id")
+         if(testid != null ){
+           swal({
+      title: "Dikkat!",
+      text: "Bu Blogu silmek istediginizden emin misiniz?",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+    $.ajax({
+        url:"/Blog/DeleteBlog/"+testid,
+        type:"GET",
+        success: function(){
+              window.location.href = '/Blog/BlogListByWriter/'
+        }
+    })
+
+      } 
+    });
+         }
+
+        });
+</script>

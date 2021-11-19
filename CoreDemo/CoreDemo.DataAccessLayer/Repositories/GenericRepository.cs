@@ -57,5 +57,10 @@ namespace CoreDemo.DataAccessLayer.Repositories
             _context.SaveChanges();
 
         }
+
+        public T GetByFilter(Expression<Func<T, bool>> filter)
+        {
+            return dbSet.Where(filter).FirstOrDefault();
+        }
     }
 }
